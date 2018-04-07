@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>e-Wallet</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<script type="text/javascript" src="../../js/fquery.js"></script>
+	<link rel="stylesheet" href="../../fonts/style.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-icons.min.css">
+</head>
+<body>
+	<div class="cabe">
+		<div id="logo"><span id="e"><img src="../../img/e.png" alt=""><span id="wallet"> Wallet</span></span></div>
+	</div>
+	<div class="con">
+			<span>Ver gastos: </span><br><br>
+		<!-- aqui van a ir ls cuentas -->
+		<div id="gas">
+			
+		</div>
+	</div>
+ 		<div class="CON1">
+			<span>Agregar nuevos gastos: </span><br><br>
+			<label>Fecha del nuevo gasto:</label><br>
+			<input type='date' id='men'><br>
+
+			<label>Motivo del nuevo gasto:</label><br>
+			<select name="" id="motivo">
+				<option value="Pago de celular">Pago de celular</option>
+				<option value="Pago de luz eléctrica">Pago de luz eléctrica</option>
+				<option value="Pago de agua">Pago de agua</option>
+				<option value="Pago de casa/alquiler">Pago de casa/alquiler</option>
+				<option value="Pago de cable">Pago de cable</option>
+				<option value="Pago de internet">Pago de internet</option>
+				<option value="Pago de educación">Pago de educación</option>
+				<option value="Supermercado">Supermercado</option>
+				<option value="Cine">Cine</option>
+				<option value="Discoteca">Discoteca</option>
+				<option value="Teatro">Teatro</option>
+				<option value="Ropa">Ropa</option>
+				<option value="Restaurante">Restaurante</option>
+				<option value="Tecnología">Tecnología</option>
+				<option value="Mascota">Mascota</option>
+				<option value="Gasolina">Gasolina</option>
+				<option value="Preparaciones">Preparaciones</option>
+				<option value="Otros">Otros</option>
+			</select>
+
+			<div id="otro">
+				<label for="">Otro motivo</label><br>
+				<input type="text" placeholder="Especifique el motivo" id="mota">
+			</div>
+			<label>Monto gastado: </label><br>
+			<input type='number' id='monto' step="0.05" value="0.00" min="0.00"><br> 
+
+			<label>Cuenta en que se descuenta el gasto: </label><br><br>
+			<input type="checkbox" id="efectivo-val"> Efectivo<br>
+			<br>
+			<input type="text" id="cuenta-val" placeholder="Cuenta"><br>
+			<input type="number" id="tarjeta-val" placeholder="Tarjeta">
+			
+			<div id="aho1">
+				<label for="">Cuenta de ahorro en el que se almacenara el gasto</label>
+				<input type="text">
+			</div>
+			<div id="tar1">
+				<label for="">Tarjeta decredito en la que se almacenara el gasto</label>
+				<input type="text">
+			</div>
+
+			<input type="button" name="button" value="AGREGAR GASTO" class="bot" id="ingre"><br><br>
+		</div>
+	
+		<div class="conta">
+		<nav>
+			<span class="mif-chevron-left mif-3x b"></span>
+			<ul id="menu_principal">
+					<img src="../../img/img.png" alt="" id="img">
+				<li><a href="../usuario.html"><span class="mif-home mif-3x principales"></span>E-Wallet</a></li>
+
+				<li>
+					<label for="drop-1">
+						<span class="mif-registered mif-3x principales"></span>
+						Cuentas
+						<span class="mif-chevron-right mif-2x derecha"></span>
+					</label>
+					<input type="checkbox" id="drop-1">
+
+					<ul>
+						<li><a id="ef" href="efectivo.html">Efectivo</a></li>
+						<li><a id="cu" href="cuenta.html">Cuentas</a></li>
+						<li><a id="" href="tarjetas.html">Tarjetas</a></li>
+					</ul>
+				</li>
+
+
+				<li>
+					<label for="drop-2">
+						<span class="mif-dollar2 mif-3x principales"></span>
+						Ingresos
+						<span class="mif-chevron-right mif-2x derecha"></span>
+					</label>
+					<input type="checkbox" id="drop-2">
+
+					<ul>
+						<li><a id="" href="ingresos.html">Ver ingresos</a></li>
+						<li><a id="" href="Aingresos.html">Agregar nuevo ingreso</a></li>
+					</ul>
+					
+				</li>
+
+
+				<li id="seleccion"><a id="" href="gastos.html"><span class="mif-dollars mif-3x principales"></span>Gastos</a></li>
+				<li><a id="" href="conf.html"><span class="mif-cog mif-3x principales"></span>Configuraciones</a></li>
+				<li><a id="" href="esta.html"><span class="mif-chart-dots mif-3x principales"></span>Estadísticas</a></li>
+				<li><a id="close"><span class="mif-not mif-3x principales"></span>Cerrar sesión</a></li>
+			</ul>
+		</nav>
+	</div>	
+	<script type="text/javascript" src="../../js/close.js"></script>
+	<script type="text/javascript" src="../../js/derecha.js"></script>
+	<script type="text/javascript" src="../../js/Fn.js"></script>
+	<script type="text/javascript" src="../../js/per-form/gastos.js"></script>
+</body>
+<footer>
+	<div class="footer01">
+		<p>©WALLET</p><p id="abajo">©CCENTERPRICE</p>
+	</div>
+</footer>
+</html>
